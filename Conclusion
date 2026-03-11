@@ -1,0 +1,20 @@
+Conclusion :
+There are 54808 rows and 13 col in the data in which there are no duplicates in which length of service and no_of_training is almost right skewed. 
+Then the box plot analysis show that there are several statistical outliers like age , number of training , and length of training . while some detected due to discrete or categorical variables like awards won and is_promoted so boxplot can determine this all as the incorrect outliers .
+in department there more number of counts in sales and marketing team there are more number of people of region 2, most of the people has done bachelors ,there are more number of male there so for the target variable we have to do feature selection as some of them are no in necessary.
+then no of training , length of service , is highly skewed and need to be transformed , age is moderated skewed so it needs transformation.
+After doing bivariate it tells that age does not influence promotion , length of service influence to the promotion but does not make very large difference , avg training score highly influences promotion , previous year rating highly influences the promotion.
+The analysis shows that most employees did not receive awards. However, employees who won awards have a higher likelihood of being promoted compared to those who did not win awards, indicating that awards may positively influence promotion decisions.
+
+In categorical data : The dataset shows variation in promotions across departments, education levels, recruitment channels, and regions. Most employees belong to Sales & Marketing and Operations departments, hold Bachelor’s degrees, and were recruited through sourcing or other channels. Promotions occur across all categories but remain relatively limited compared to the total number of employees. 
+
+Missing values : for education we will the impute the data using Mode imputation 
+and for the previous year ratings we can use median imputation. 
+
+outliers : we can use use capping for limmiting the values.
+
+skewness: 
+we will use log , square_root transformation so that after the transformation it becomes managable 
+
+encoding: 
+one-hot encoding ,binary ,ordinal encoding 
